@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title></title>
+	<style>
+		*
+		{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.container 
+		{
+			height: 1800px;
+			width: 100%;
+		/*	border: 1px solid black;*/
+		}
+		.parent
+		{
+			height: 400px;
+			width: 100%;
+			background-color: #E6FAF5;
+		}
+		.parent h1 span 
+		{
+			color: red;
+			margin-top: 150px;
+		}
+		.parent h1
+		{
+			font-size: 70px;
+			margin-left: 100px;
+		}
+		.child 
+		{
+			height: 1000px;
+			width: 100%;
+		/*	border: 1px solid black;*/
+		}
+		.child h1
+		{
+			font-size: 50px;
+			margin-left: 100px;
+			margin-top: 50px;
+		}
+		.child select option 
+		{
+			font-size: 30px;
+			margin-left: 100px;
+		}
+		.child h2 
+		{
+			font-size: 50px;
+			margin-left: 100px;
+			margin-top: 50px;
+		}
+		.child h2 span 
+		{
+			color: red;
+		}
+		.child select
+		{
+			font-size: 30px;
+			margin-left: 100px;
+			margin-top: 50px;
+			height: 100px;
+			width: 550px;
+			border-right: none;
+			border-left: none;
+			border-top: none;
+		}
+		.bottom 
+		{
+		/*	height: 400px;*/
+			width: 100%;
+			border: 1px solid black;
+			background-color: black;
+			margin-top: 70px;
+		}
+		.btm 
+		{
+			display: flex;
+			justify-content: space-evenly;
+			margin: 30px;
+		/*	flex-wrap: wrap;*/
+		}
+		.ul1 
+		{
+			height: 200px;
+			width: 300px;
+		/*	border: 1px solid black;*/
+		}
+		.ul1 li
+		{
+			list-style-type: none;
+			text-align: center;
+			margin: 20px;
+			color: white;
+		}
+		.lf 
+		{
+			font-size: 30px;
+		}
+		.ul2 
+		{
+			height: 200px;
+			width: 300px;
+		/*	border: 1px solid black;*/
+		}
+		.ul2 li
+		{
+			list-style-type: none;
+			text-align: center;
+			margin: 20px;
+			color: white;
+		}
+		.st 
+		{
+			font-size: 30px;
+		}
+		.ul3 li 
+		{
+			list-style-type: none;
+			text-align: center;
+			margin: 20px;
+			color: white;
+		}
+		.ul3 li i 
+		{
+			margin: 10px;
+		}
+		.sc
+		{
+			font-size: 30px;
+		}
+		.ul3 
+		{
+			height: 200px;
+			width: 300px;
+		/*	border: 1px solid black;*/
+		}
+		*
+		{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.navbar
+		{
+			padding: 20px;
+			background-color: white;
+			position: relative;
+		}
+		.navbar a 
+		{
+			text-decoration: none;
+		}
+		.navbar-header
+		{
+			color: red;
+		}
+		.navbar .navbar-header
+		{
+			font-size: 20px;
+		}
+
+
+		/*		Desktop*/
+		@media(min-width:600px)
+		{
+			.navbar-item ul li 
+			{
+				display: inline;
+			}
+			.navbar .navbar-item
+			{
+				position: absolute;
+				right: 0px;
+				bottom: 20px;
+			}
+			.navbar .navbar-item ul li 
+			{
+				margin-right: 25px;
+				font-size: 20px;
+			}
+			.navbar .navbar-button
+			{
+				display: none;
+			}
+
+		}
+
+
+		/*		Tablet*/
+		@media(max-width:600px)
+		{
+
+			.navbar .navbar-button
+			{
+				position: absolute;
+				right: 20px;
+			}
+				.navbar .hide
+			{
+				display:none;
+			}
+			.navbar .navbar-item ul li
+			{
+				margin-right: 20px;
+				text-decoration: none;
+		     }
+		     .navbar .navbar-item ul li a
+		     {
+		     	text-decoration: none;
+		     }
+
+		}
+		@media(max-width:991px)
+		{
+			.parent h1 
+			{
+				font-size: 40px;
+			}
+			.parent
+			{
+				width: 800px;
+			}
+			.child select 
+			{
+				font-size: 30px;
+			}
+			.child h2 
+			{
+				font-size: 30px;
+			}
+			.bottom 
+			{
+				width: 800px;
+			}
+		}
+
+		@media(max-width:768px)
+		{
+			.parent h1 
+			{
+				font-size: 40px;
+			}
+			.parent 
+			{
+
+				width: 800px;
+			}
+			.child select 
+			{
+				font-size: 30px;
+			}
+			.child h2 
+			{
+				font-size: 30px;
+			}
+			.bottom 
+			{
+				width: 800px;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<a href="#" class="navbar-header"><span>Little</span> Fashion</a>
+		<button class="navbar-button"><i class="fa-solid fa-bars"></i></button>
+		<div class="navbar-item hide">
+			<ul>
+				<ul>
+			<!-- <li class="logo"><span>Little</span>Fashion</li> -->
+			<li><a href="">Home</a></li>
+			<li><a href="file:///C:/Users/banup/OneDrive/Desktop/news%20paper/story/index1.html">story</a></li>
+			<li><a href="file:///C:/Users/banup/OneDrive/Desktop/news%20paper/product/index.html">Products</a></li>
+			<li><a href="file:///C:/Users/banup/OneDrive/Desktop/news%20paper/faqs/index.html">FAQs</a></li>
+			<li><a href="file:///C:/Users/banup/OneDrive/Desktop/news%20paper/contact/index.html">Contact</a></li>
+			<li><a href="file:///C:/Users/banup/OneDrive/Desktop/news%20paper/lock/index.html"><i class="fa-regular fa-id-card"></a></i></li>
+			<li><a href=""><i class="fa-solid fa-lock"></a></i></li>
+		</ul>
+			</ul>
+		</div>
+	</div>
+	<script>
+		document.querySelector(".navbar-button").onclick=function(){
+		  document.querySelector(".navbar-item").classList.toggle("hide")
+		}
+	</script>
+	<div class="container">
+		<div class="parent">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h1><span>Your favorite questions</span><br>and our answers to them</h1>
+		</div>
+		<div class="child">
+			<h1><b>General Info.</b></h1>
+			<select>
+				<div class="one"><option>What is this Little Fashion?</option>
+				<option>Little Fashion is free Bootstrap 5 website template for everyone. There are 8</option>
+				 <option>HTML pages included in this template and you </option>
+				<option>can expand more pages as you need.</option>
+				<option>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </option>
+				<option>aliquip ex ea commodo consequat.</option></div>
+			</select>
+			<br>
+			<select>
+				<option>Nullam in nisl ex. Morbi?</option>
+				<option>Convallis blandit massa, dictum mattis diam finibus sed. Integer elementum</option>
+				<option>consectetur nibh, in varius dui fermentum nec. Nulla placerat aliquam turpis,</option> 
+				<option>vel dictum elit condimentum ut. Nunc orci.</option>
+			</select>
+			<br>
+			<select>
+				<option>Sapien, auctor id consequat?</option>
+				<option>Nec, semper in erat. Ut fermentum semper ornare. Suspendisse non accumsan </option>
+				<option>ex. Morbi molestie ante eget lectus.</option>
+			</select>
+			<h2>About <span>Our Product</span></h2>
+			<select #What is fashion design>
+				<option>What is Fashion Design?</option>
+				<option>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</option>
+				<option>tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</option>
+				<option>ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel</option>
+				<option>facilisis.</option>
+				<option>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</option>
+				<option>aliquip ex ea commodo consequat.</option>
+			</select>
+			<br>
+			<select>
+				<option>How do I use the product?</option>
+				<option>Lorem ipsum is placeholder text commonly used in the graphic, print, and</option>
+				<option>publishing industries for previewing layouts and visual mockups.</option>
+			</select>
+		</div>
+		<div class="bottom">
+			<div class="btm">
+			<ul class="ul1">
+				<li class="lf"><span>Little</span>Fashion</li>
+				<li>Copyright © 2045 Little Fashion</li>
+				<li>Designed by Tooplate</li>
+			</ul>
+			<ul class="ul2">
+				<li class="st">Sitemap</li>
+				<li>Story</li>
+				<li>Privacy policy</li>
+				<li>Contact</li>	
+			</ul>
+			<ul class="ul3">
+				<li class="sc">Social</li>
+				<li><i class="fa-brands fa-youtube"></i><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-instagram"></i></li>
+			</ul>
+		</div>
+		</div>
+</body>
+</html>

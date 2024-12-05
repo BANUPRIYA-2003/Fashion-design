@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title></title>
+	<style>
+		*
+		{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.container
+		{
+			height: 1500px;
+			width: 100%;
+		/*	border: 1px solid black;*/
+		}
+		.parent
+		{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.box1 
+		{
+			height: 500px;
+			width: 50%;
+			background-color: #EEFDFD;
+		}
+		.box2
+		{
+			height: 500px;
+			width: 50%;
+			background-image: url(cnt1.jpg);
+			background-size: cover;
+		}
+		.box1 h1 
+		{
+			font-size: 70px;
+			margin-top: 200px;
+			margin-left: 50px;
+		}
+		.box1 h1 span 
+		{
+			color: red;
+		}
+		.child1  
+		{
+			height: 650px;
+			width: 100%;
+		/*	border: 1px solid black;*/
+		}
+		.child1 h2 
+		{
+			font-size: 45px;
+			margin-top: 50px;
+			margin-left: 50px;
+		}
+		.child1 h2 span 
+		{
+			color: red;
+		}
+		.one 
+		{
+			display: flex;
+		/*	flex-wrap: wrap;*/
+		}
+		.box3 
+		{/*
+			height: 550px;*/
+			width: 50%;
+		/*	border: 1px solid black;*/
+		}
+		.box4
+		{
+
+		/*	height: 550px;*/
+			width: 50%;
+		/*	border: 1px solid  black;*/
+		}
+		.ipt1 input
+		{
+			height: 60px;
+			width: 350px;
+			margin-left: 50px;
+			margin-top: 50px;
+			font-size: 25px;
+		}
+		.ipt2 input
+		{
+			height: 60px;
+			width: 350px;
+			margin-left: 50px;
+			font-size: 25px;
+		}
+		.ipt3 input
+		{
+			height: 60px;
+			width: 350px;
+			margin-left: 50px;
+			font-size: 25px;
+		}
+		.ipt4 input
+		{
+			height: 150px;
+			width: 350px;
+			margin-left: 50px;
+			font-size: 25px;
+		}
+		.child1 button 
+		{
+			height: 45px;
+			width: 150px;
+			margin-left: 100px;
+			margin-top: 50px;
+			border-radius: 20px;
+			background-color: black;
+			border: 1px solid black;
+			color: white;
+			font-size: 20px;
+		}
+		.child1 button:hover
+		{
+			background-color: red;
+			border: 1px solid red;
+		}
+		.box4 .box5
+		{
+			height: 260px;
+			width: 300px;
+			border: 1px solid grey;
+			margin-left: 70px;
+			border-left: none;
+			border-top: none;
+		}
+		.box4 .box5 h3
+		{
+			text-align: center;
+			margin-top: 100px;
+			font-size: 22px;
+		}
+		.box4 .box5 h4
+		{
+			text-align: center;
+			font-size: 20px;
+			color: gray;
+		}
+		.box4 .box5 h4:hover
+		{
+			color: red;
+		}
+		.two
+		{
+			display: flex;
+		}
+		.box4 .box6
+		{
+			height: 260px;
+			width: 300px;
+			border: 1px solid grey;
+			border-right: none;
+			border-top: none;
+		}
+		.box4 .box6 h3
+		{
+			text-align: center;
+			margin-top: 100px;
+			font-size: 22px;
+		}
+		.box4 .box6 h4
+		{
+			text-align: center;
+			font-size: 20px;
+			color: gray;
+		}
+		.box4 .box6 h4:hover
+		{
+			color: red;
+		}
+		.three
+		{
+			display: flex;
+		}
+		.box4 .box7
+		{
+			height: 260px;
+			width: 300px;
+			border: 1px solid grey;
+			margin-left: 70px;
+			border-left: none;
+			border-bottom: none;
+		}
+		.box4 .box8
+		{
+			height: 260px;
+			width: 300px;
+			border: 1px solid grey;
+			border-right: none;
+			border-bottom: none;
+		}
+		.box4 .box7 h3
+		{
+			text-align: center;
+			margin-top: 100px;
+			font-size: 22px;
+		}
+		.box4 .box7 h4
+		{
+			text-align: center;
+			color: gray;
+		}
+		.box4 .box7 h4:hover
+		{
+			color: red;
+		}
+		.box4 .box8 h3
+		{
+			text-align: center;
+			margin-top: 100px;
+			font-size: 22px;
+		}
+		.box4 .box8 i
+		{
+			margin-left: 10px;
+			margin-top: 20px;
+			color: gray;
+		}
+		.bottom 
+		{
+		/*	height: 400px;*/
+			width: 100%;
+			border:1px solid black ;
+			background-color: black;
+		}
+		.six 
+		{
+			display: flex;
+		}
+		.six ul li 
+		{
+			margin-left: 100px;
+			list-style-type: none;
+			color: grey;
+			font-size: 20px;
+		}
+		ul li.lf
+		{
+			font-size: 35px;
+			color: grey;
+			margin-top: 70px;
+		}
+		.lf span 
+		{
+			color: white;
+		}
+		.ul
+		{
+			margin-left: 200px;
+			margin-top: 70px;
+		}
+		ul li.st 
+		{
+			font-size: 30px;
+			margin-left: 100px;
+		}
+		.ul1 
+		{
+			margin-top: 70px;
+		}
+		ul.ul1 li 
+		{
+			font-size: 30px;
+		}
+		ul.ul1 li i 
+		{
+			font-size: 30px;
+			margin-left:70px;
+			margin-top: 30px;
+		}
+		*
+		{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.navbar
+		{
+			padding: 20px;
+			background-color: white;
+			position: relative;
+		}
+		.navbar a 
+		{
+			text-decoration: none;
+		}
+		.navbar-header
+		{
+			color: red;
+		}
+		.navbar .navbar-header
+		{
+			font-size: 20px;
+		}
+
+
+		/*		Desktop*/
+		@media(min-width:600px)
+		{
+			.navbar-item ul li 
+			{
+				display: inline;
+			}
+			.navbar .navbar-item
+			{
+				position: absolute;
+				right: 0px;
+				bottom: 20px;
+			}
+			.navbar .navbar-item ul li 
+			{
+				margin-right: 25px;
+				font-size: 20px;
+			}
+			.navbar .navbar-button
+			{
+				display: none;
+			}
+
+		}
+
+
+		/*		Tablet*/
+		@media(max-width:600px)
+		{
+
+			.navbar .navbar-button
+			{
+				position: absolute;
+				right: 20px;
+			}
+				.navbar .hide
+			{
+				display:none;
+			}
+			.navbar .navbar-item ul li
+			{
+				margin-right: 20px;
+				text-decoration: none;
+		     }
+		     .navbar .navbar-item ul li a
+		     {
+		     	text-decoration: none;
+		     }
+
+		}
+
+		@media(max-width:991px)
+		{
+			.box1 h1
+			{
+				font-size: 30px;
+			}
+			.parent 
+			{
+				width: 850px;
+			}
+			.one 
+			{
+				width: 850px;
+			}
+			.bottom
+			{
+				width: 850px;
+			}
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<a href="#" class="navbar-header"><span>Little</span> Fashion</a>
+		<button class="navbar-button"><i class="fa-solid fa-bars"></i></button>
+		<div class="navbar-item hide">
+			<ul>
+				<ul>
+			<!-- <li class="logo"><span>Little</span>Fashion</li> -->
+			<li><a href="">Home</a></li>
+			<li><a href="file:///C:/Users/banup/OneDrive/Desktop/news%20paper/story/index1.html">story</a></li>
+			<li><a href="file:///C:/Users/banup/OneDrive/Desktop/news%20paper/product/index.html">Products</a></li>
+			<li><a href="file:///C:/Users/banup/OneDrive/Desktop/news%20paper/faqs/index.html">FAQs</a></li>
+			<li><a href="file:///C:/Users/banup/OneDrive/Desktop/news%20paper/contact/index.html">Contact</a></li>
+			<li><a href="file:///C:/Users/banup/OneDrive/Desktop/news%20paper/lock/index.html"><i class="fa-regular fa-id-card"></a></i></li>
+			<li><a href=""><i class="fa-solid fa-lock"></a></i></li>
+		</ul>
+			</ul>
+		</div>
+	</div>
+	<script>
+		document.querySelector(".navbar-button").onclick=function(){
+		  document.querySelector(".navbar-item").classList.toggle("hide")
+		}
+	</script>
+	<div class="container">
+		<div class="parent">
+			<div class="box box1">
+				<h1><span>Say hello to us</span><br>love to hear you</h1>
+			</div>
+			<div class="box box2"></div>
+		</div>
+		<div class="child1">
+			<h2>Let's <span>begin</span></h2>
+			<div class="one">
+				<div class="box3">
+					<label>
+						<div class="ipt1"><input type="text" name="Full name" placeholder="Full name"></div><br>
+						<div class="ipt2"><input type="text" name="Email" placeholder="Email address"></div><br>
+						<div class="ipt3"><input type="text" name="text" placeholder="Subject"></div><br>
+						<div class="ipt4"><input type="text" name="text" placeholder="Tell us about the project"></div>
+					</label>
+					<button>Send</button>
+				</div>
+				<div class="box4">
+					<div class="two">
+					<div class="box5">
+						<h3>New Business</h3>
+						<h4>hello@domain.com</h4>
+					</div>
+					<div class="box6">
+						<h3>Main Studio</h3>
+						<h4>studio@domain.com</h4>
+					</div>
+				</div>
+				<div class="three">
+					<div class="box7">
+						<h3>Our Office</h3>
+						<h4>Akershusstranda 20,<br> 0150 Oslo, Norway</h4>
+					</div>
+					<div class="box8">
+						<h3>Our Socials</h3>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-telegram"></i><i class="fa-brands fa-youtube"></i><i class="fa-brands fa-instagram"></i>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="six">
+				<ul>
+					<li class="lf">Little<span> Fashion</span></li>
+					<li>Copyright © 2045 Little Fashion</li>
+					<li>Designed by Tooplate</li>
+				</ul>
+				<ul class="ul">
+					<li class="st">Sitemap</li>
+					<li>About &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Products</li>
+					<li>Privacypolicy  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FAQs</li>
+					<li>Contact</li>
+				</ul>
+				<ul class="ul1">
+					<li class="sc">Social</li>
+					<li><i class="fa-brands fa-youtube"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-square-whatsapp"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-instagram"></i></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

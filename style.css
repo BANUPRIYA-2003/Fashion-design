@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rock+Salt&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+}
+/*.nav 
+{
+	height: 80px;
+	width: 100%;
+	border: 1px solid grey;
+}
+.nav ul li 
+{
+	display: inline;
+	margin:0 10px ;
+}
+.nav ul li.logo
+{
+	font-size: 25px;
+	margin-left: 50px;
+	font-family: "Ubuntu", sans-serif;
+}
+.nav ul li.logo span 
+{
+	color: red;
+}
+.nav ul li a 
+{
+	text-decoration: none;
+}
+
+.nav ul li a 
+{
+	margin-left: 30px;
+}
+.nav ul li a:hover 
+{
+	color: red;
+}
+.nav ul li i:hover
+{
+	color: red;
+}*/
+.menu-line 
+{
+	height: 3px;
+	width: 20px;
+	background-color: darkblue;
+	margin-bottom: 3px;
+	margin-left: 20px;
+}
+.menu 
+{
+	cursor: pointer;
+	display: none;
+}
+.parent 
+{
+/*	height: 600px;*/
+	width: 100%;
+	border: 1px solid black;
+	background-image: url(lf1.jpg);
+	background-size: 100% 100%;
+	animation-name: animea;
+	animation-duration: 16s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes animea 
+{
+	0%
+	{
+		background-image:url(iff1.jpg);
+	}
+	25%
+	{
+		background-image: url(iff2.jpg);
+	}
+}
+.parent h1 
+{
+	color: white;
+	margin-top: 300px;
+	font-size: 80px;
+	margin-left: 50px;
+}
+.parent p 
+{
+	color: white;
+	font-size: 30px;
+	margin-left: 50px;
+}
+.parent button
+{
+	background-color: black;
+	color: white;
+	height: 40px;
+	width: 150px;
+	margin-left: 50px;
+	margin-top: 30px;
+	border-radius: 20px;
+	border: 1px solid black;
+}
+.parent button:hover
+{
+	background-color: red;
+	border: 1px solid red;
+}
+.child h1 span
+{
+	color: red;	
+}
+.child h1 
+{
+	text-align: center;
+	font-size: 40px;
+}
+.one 
+{
+	height: 250px;
+	width: 250px;
+/*	border: 1px solid black;*/
+}
+.one h3 
+{
+	margin-top: 50px;
+	text-align: center;
+	font-size: 25px;
+}
+.one h3 a 
+{
+	text-decoration: none;
+	color: black;
+}
+.one h3 a:hover
+{
+	color: red;
+}
+.img 
+{
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 30px;
+	flex-wrap: wrap;
+}
+.two 
+{
+	height: 400px;
+	width: 500px;
+/*	border: 1px solid black;*/
+	background-image: url(lf2.jpg);
+	background-size: cover;
+}
+.three 
+{
+	height: 400px;
+	width: 500px;
+/*	border: 1px solid black;*/
+}
+.three h1 
+{
+	font-size: 30px;
+}
+.three p 
+{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 25px;
+	color: grey;
+}
+
+
+@media (max-width:991px)
+{
+	.child
+	{
+		flex-direction: column;
+	}
+}
+.child1
+{
+	height: 500px;
+	width: 100%;
+/*	border: 1px solid black;*/
+}
+.child2
+{
+	display: flex;
+}
+.box1
+{
+	height: 450px;
+	width: 50%;
+	background-image: url(lf3.jpg);
+	background-size: cover;
+}
+.box2
+{
+	height: 450px;
+	width: 50%;
+	background-color:#E0F9FA ;
+}
+.child2 h1
+{
+	font-size: 50px;
+	text-align: center;
+	margin-top: 130px;
+}
+.child2 h1 span 
+{
+	color: red;
+}
+.child2 p
+{
+	font-size: 30px;
+	text-align: center;
+	margin-top: 30px;
+	color: grey;
+}
+.child2 button
+{
+	margin-left: 200px;
+	margin-top: 30px;
+	font-size: 20px;
+	background-color:#E0F9FA;
+	border: 1px solid #E0F9FA;
+	color: grey;
+}
+.child3
+{
+/*	height: 600px;*/
+	width: 100%;
+/*	border: 1px solid black;*/
+}
+.child3 h1
+{
+	text-align: center;
+	font-size: 60px;
+}
+.fp
+{
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 50px;
+	flex-wrap: wrap;
+}
+.fp .box3
+{
+	height: 350px;
+	width: 350px;
+	background-image: url(lf4.jpg);
+	background-size: cover;
+}
+.fp .box3:hover
+{
+	box-shadow: 3px 3px 3px 3px lightgray;
+}
+.fp .box4
+{
+	height: 350px;
+	width: 350px;
+	background-image: url(lf5.jpg);
+	background-size: cover;
+}
+.fp .box4:hover
+{
+	box-shadow: 3px 3px 3px 3px lightgray;
+}
+.fp .box5
+{
+	height: 350px;
+	width: 350px;
+	background-image: url(lf6.jpg);
+	background-size: cover;
+}
+.fp .box5:hover
+{
+	box-shadow: 3px 3px 3px 3px lightgray;
+}
+.box3-3
+{
+	height: 30px;
+	width: 100px;
+	margin-top: 20px;
+	margin-left: 20px;
+	background-color: white;
+}
+.box3-3 h4
+{
+	color: grey;
+	text-align: center;
+}
+.box3-3 i
+{
+	position: absolute;
+	right: 1060px;
+	font-size: 20px;
+	color: white;
+}
+.box3-3 i:hover
+{
+	color: red;
+}
+.box4-4
+{
+	height: 30px;
+	width: 100px;
+	background-color: white;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.box4-4 h4
+{
+	color: grey;
+	margin-left: 10px;
+}
+.box4 flex
+{
+	display: flex;
+}
+.box4-4 i
+{
+	margin-left: 300px;
+	font-size: 20px;
+	color: white;
+}
+.box4-4 i:hover
+{
+	color: red;
+}
+.box5 i
+{
+	margin-left: 300px;
+	margin-top: 20px;
+	font-size: 20px;
+	color: white;
+}
+.box5 i:hover
+{
+	color: red;
+}
+.box3-3 h2
+{
+	margin-top: 310px;
+}
+.box3-3 h2 span 
+{
+	font-size: 15px;
+}
+.flex1 
+{
+	display: flex;
+}
+.flex1 h2 span
+{
+	color: grey;
+	font-size: 19px;
+	margin-left: 80px;
+}
+.flex2
+{
+	display: flex;
+}
+.flex2 h2
+{
+	font-size: 30px;
+	margin-top: 310px;
+}
+.flex2 h2 span 
+{
+	color: grey;
+	font-size: 20px;
+}
+.flex3
+{
+	display: flex;
+}
+.flex3 h2
+{
+	margin-top: 310px;
+	font-size: 30px;
+}
+.flex3 h2 span 
+{
+	font-size: 20px;
+	color: grey;
+}
+.switch button
+{
+	margin-left: 700px;
+	margin-top: 100px;
+	color: grey;
+	font-size: 20px;
+	background-color: white;
+	border: 1px solid white;
+}
+.switch button:hover
+{
+	color: red;
+}
+.bottom 
+{
+/*	height: 400px;*/
+	width: 100%;
+	border: 1px solid black;
+	background-color: black;
+	margin-top: 70px;
+}
+.btm 
+{
+	display: flex;
+	justify-content: space-evenly;
+	margin: 30px;
+/*	flex-wrap: wrap;*/
+}
+.ul1 
+{
+	height: 200px;
+	width: 300px;
+/*	border: 1px solid black;*/
+}
+.ul1 li
+{
+	list-style-type: none;
+	text-align: center;
+	margin: 20px;
+	color: white;
+}
+.lf 
+{
+	font-size: 30px;
+}
+.ul2 
+{
+	height: 200px;
+	width: 300px;
+/*	border: 1px solid black;*/
+}
+.ul2 li
+{
+	list-style-type: none;
+	text-align: center;
+	margin: 20px;
+	color: white;
+}
+.st 
+{
+	font-size: 30px;
+}
+.ul3 li 
+{
+	list-style-type: none;
+	text-align: center;
+	margin: 20px;
+	color: white;
+}
+.ul3 li i 
+{
+	margin: 10px;
+}
+.sc
+{
+	font-size: 30px;
+}
+.ul3 
+{
+	height: 200px;
+	width: 300px;
+/*	border: 1px solid black;*/
+}
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.navbar
+{
+	padding: 20px;
+	background-color:white;
+	position: relative;
+}
+.navbar a 
+{
+	text-decoration: none;
+}
+.navbar-header span
+{
+	color: red;
+}
+.navbar .navbar-header
+{
+	font-size: 20px;
+}
+
+
+/*		Desktop*/
+@media(min-width:991px)
+{
+	.navbar-item ul li 
+	{
+		display: inline;
+	}
+	.navbar .navbar-item
+	{
+		position: absolute;
+		right: 0px;
+		bottom: 20px;
+	}
+	.navbar .navbar-item ul li 
+	{
+		margin-right: 25px;
+		font-size: 20px;
+	}
+	.navbar .navbar-button
+	{
+		display: none;
+	}
+
+}
+
+
+/*		Tablet*/
+@media(max-width:768px)
+{
+
+	.navbar .navbar-button
+	{
+		position: absolute;
+		right: 20px;
+	}
+		.navbar .hide
+	{
+		display:none;
+	}
+	.navbar .navbar-item ul li
+	{
+		margin-right: 20px;
+		text-decoration: none;
+     }
+     .navbar .navbar-item ul li a
+     {
+     	text-decoration: none;
+     }
+
+}
+
+
+@media(max-width:900px)
+{
+	.parent
+	{
+		flex-direction: column;
+		width: 100%;
+	}
+	.parent h1 
+	{
+		font-size: 28px;
+	}
+	.parent p
+	{
+		font-size: 20px;
+		padding: 20px;
+	}
+	.bottom 
+	{
+		width: 100%;
+		height: 500px;
+	}
+	.ul1 
+	{
+		font-size: 20px;
+	}
+	.ul2 
+	{
+		font-size: 20px;
+	}
+	.ul3
+	{
+		font-size: 20px;
+	}
+}
+@media(max-width:768px)
+{
+	.parent
+	{
+		flex-direction: column;
+		width: 800px;
+	}
+	.parent h1
+	{
+		font-size: 20px;
+	}
+	.parent p 
+	{
+		font-size: 20px;
+		padding: 15px;
+	}
+	.two 
+	{
+		width: 800px;
+	}
+	.bottom 
+	{
+		width: 800px;
+		height: 500px;
+	}
+	.ul1 
+	{
+		font-size: 20px;
+	}
+	.ul2 
+	{
+		font-size: 20px;
+	}
+	.ul3
+	{
+		font-size: 20px;
+	}
+}
+
+@media(max-width:900px)
+{
+	.one 
+	{
+		flex-direction: column;
+	}
+	.child h1 
+	{
+		font-size: 30px;
+	}
+	.one h1 
+	{
+		flex-direction: row;
+	}
+	.child2 
+	{
+		flex-direction: column;
+		width: 800px;
+	}
+	.box1
+	{
+		width: 100%;
+	}
+	.box2
+	{
+		width: 100%;
+	}
+	.box2 h1 
+	{
+		font-size: 40px;
+	}
+	.box2 p 
+	{
+		font-size: 35px;
+	}
+	.box2 button 
+	{
+		margin-left: 350px;
+		font-size: 25px;
+	}
+	.box5 
+	{
+		margin-top: 100px;
+	}
+	.switch button
+	{
+		margin-left: 350px;
+	}
+
+}
+@media(max-width:900px)
+{
+	.fp 
+	{
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.child3 
+	{
+		margin-top: 400px;
+	}
+	
+}
+@media(max-width:900px)
+{
+	.six
+	{
+		flex-direction:row;
+	}
+}
+
+

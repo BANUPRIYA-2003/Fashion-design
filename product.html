@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		 
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rock+Salt&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+}
+.container 
+{
+	height: 2000px;
+	width: 100%;
+/*	border: 1px solid black;*/
+}
+.parent 
+{
+	height: 400px;
+	width: 100%;
+/*	border: 1px solid black;*/
+	background-color:#D4FAF1;
+}
+
+.parent h1
+{
+/*	margin-top: 150px;*/
+	font-size: 55px;
+	font-weight: 900;
+	margin-left: 50px;
+	font-family: "Kanit", sans-serif;
+}
+.parent h1 span 
+{
+	color: red;
+}
+.child h2 
+{
+	font-weight:bold;
+	font-family: "Kanit", sans-serif;
+	font-size: 35px;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+.one 
+{
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 20px;
+	flex-wrap: wrap;
+	margin: 10px;
+}
+
+.box1
+{
+	height: 350px;
+	width: 350px;
+	background-image: url(pr1.jpg);
+	background-size: cover;
+}
+.box1:hover
+{
+	box-shadow: 3px 3px 3px 3px grey;
+}
+.box1 h2
+{
+	margin-top: 350px;
+}
+.box1-1
+{
+	height: 30px;
+	width: 120px;
+	background-color: white;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.flex
+{
+	display: flex;
+}
+.box1-1 h3
+{
+	color: grey;
+}
+.box1-1 i
+{
+	margin-left: 200px;
+	color: white;
+	font-size: 20px;
+}
+.box1-1 i:hover
+{
+	color: red;
+}
+.one1
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px;
+}
+.box2 
+{
+	height: 350px;
+	width: 350px;
+	background-image: url(pr2.jpg);
+	background-size: cover;
+/*	margin-top: 50px;*/
+}
+.box2:hover
+{
+	box-shadow: 3px 3px 3px 3px grey;
+}
+.box2-2 
+{
+	height: 30px;
+	width: 150px;
+	background-color: white;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.box2-flex 
+{
+	display: flex;
+}
+.box2-flex h3
+{
+	color: grey;
+}
+.box2-flex i
+{
+	margin-left: 150px;
+	color: white;
+	font-size: 20px;
+}
+.box2-flex i:hover
+{
+	color: red;
+}
+.box3
+{
+	height: 350px;
+	width: 350px;
+	background-image: url(pr3.jpg);
+	background-size: cover;
+/*	margin-top: 200px;*/
+}
+.box3:hover
+{
+	box-shadow: 3px 3px 3px 3px grey;
+}
+.box3 i
+{
+	margin-left: 300px;
+	margin-top: 20px;
+	font-size: 20px;
+	color: white;
+}
+.box3 i:hover
+{
+	color: red;
+}
+.box3 h2
+{
+	margin-top: 350px;
+}
+.box3 h2 span
+{
+	color: grey;
+	font-size: 18px;
+}
+.flex1 
+{
+	display: flex;
+}
+.flex1 span 
+{
+	color: grey;
+	font-size: 18px;
+}
+.flex11
+{
+	display: flex;
+}
+.flex11 h2 span 
+{
+	color: grey;
+	font-size: 18px;
+}
+.flex11 h2 
+{
+	margin-top: 350px;
+}
+.popular
+{
+/*	height: 600px;*/
+	width: 100%;
+	margin-top: 200px;
+}
+.popular h1 
+{
+	font-size: 60px;
+	margin-left: 50px;
+}
+.three
+{
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 50px;
+	flex-wrap: wrap;
+}
+.box4
+{
+	height: 350px;
+	width: 350px;
+	background-image: url(pr4.jpg);
+	background-size: cover;
+}
+.box4:hover
+{
+	box-shadow: 5px 5px 5px 5px lightgrey;
+}
+.box5
+{
+	height: 350px;
+	width: 350px;
+	background-image: url(pr5.jpg);
+	background-size: cover;
+/*	margin-top: 70px;*/
+}
+.box5:hover
+{
+	box-shadow: 5px 5px 5px 5px lightgrey;
+}
+.box6
+{
+	height: 350px;
+	width: 350px;
+	background-image: url(pr6.jpg);
+	background-size: cover;
+/*	margin-top: 70px;*/
+}
+.box6:hover
+{
+	box-shadow: 5px 5px 5px 5px lightgrey;
+}
+.box4-4.tr 
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+.box4-4
+{
+	height: 30px;
+	width: 80px;
+	background-color: white;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.box4-4 h4 
+{
+	color: grey;
+	margin-top: 10px;
+}
+.box4-4 i 
+{
+	margin-left: 300px;
+	color: white;
+	font-size: 25px;
+}
+.box5 i 
+{
+	margin-left: 300px;
+	font-size: 20px;
+	margin-top: 10px;
+	color: white;
+}
+.box6 i 
+{
+	margin-left: 300px;
+	font-size: 20px;
+	margin-top: 10px;
+	color: white;
+}
+.box4 h2 
+{
+	margin-top: 300px;
+}
+.box4 span 
+{
+	color: grey;
+	font-size: 15px;
+}
+.box5 h2 
+{
+	margin-top: 320px;
+}
+.box5 span 
+{
+	color: grey;
+	font-size: 15px;
+	margin-left: 200px;
+}
+.box6 h2 
+{
+	margin-top: 320px;
+}
+.box6 span 
+{
+	color: grey;
+	font-size: 15px;
+	margin-left: 200px;
+}
+.bottom 
+{
+/*	height: 400px;*/
+	width: 100%;
+	border: 1px solid black;
+	background-color: black;
+	margin-top: 70px;
+}
+.btm 
+{
+	display: flex;
+	justify-content: space-evenly;
+	margin: 30px;
+/*	flex-wrap: wrap;*/
+}
+.ul1 
+{
+	height: 200px;
+	width: 300px;
+/*	border: 1px solid black;*/
+}
+.ul1 li
+{
+	list-style-type: none;
+	text-align: center;
+	margin: 20px;
+	color: white;
+}
+.lf 
+{
+	font-size: 30px;
+}
+.ul2 
+{
+	height: 200px;
+	width: 300px;
+/*	border: 1px solid black;*/
+}
+.ul2 li
+{
+	list-style-type: none;
+	text-align: center;
+	margin: 20px;
+	color: white;
+}
+.st 
+{
+	font-size: 30px;
+}
+.ul3 li 
+{
+	list-style-type: none;
+	text-align: center;
+	margin: 20px;
+	color: white;
+}
+.ul3 li i 
+{
+	margin: 10px;
+}
+.sc
+{
+	font-size: 30px;
+}
+.ul3 
+{
+	height: 200px;
+	width: 300px;
+/*	border: 1px solid black;*/
+}
+
+/*/*.bottom 
+{	height: 400px;
+	width: 100%;
+	border:1px solid black ;
+	background-color: black;
+}
+.six 
+{
+	display: flex;
+}
+.six ul li 
+{
+	margin-left: 100px;
+	list-style-type: none;
+	color: grey;
+	font-size: 20px;
+}
+ul li.lf
+{
+	font-size: 35px;
+	color: grey;
+	margin-top: 70px;
+}
+.lf span 
+{
+	color: white;
+}
+.ul
+{
+	margin-left: 200px;
+	margin-top: 70px;
+}
+ul li.st 
+{
+	font-size: 30px;
+	margin-left: 100px;
+	color: white;
+}
+ul li.sc
+{
+	margin-left: 220px;
+	color: white;
+}
+.ul1 
+{
+	margin-top: 70px;
+}
+ul.ul1 li 
+{
+	font-size: 30px;
+}
+ul.ul1 li i 
+{
+	font-size: 30px;
+	margin-left:70px;
+	margin-top: 30px;
+}*/*/
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.navbar
+{
+	padding: 20px;
+	background-color: white;
+	position: relative;
+}
+.navbar a 
+{
+	text-decoration: none;
+}
+.navbar-header
+{
+	color: red;
+}
+.navbar .navbar-header
+{
+	font-size: 20px;
+}
+
+
+/*		Desktop*/
+@media(min-width:600px)
+{
+	.navbar-item ul li 
+	{
+		display: inline;
+	}
+	.navbar .navbar-item
+	{
+		position: absolute;
+		right: 0px;
+		bottom: 20px;
+	}
+	.navbar .navbar-item ul li 
+	{
+		margin-right: 25px;
+		font-size: 20px;
+	}
+	.navbar .navbar-button
+	{
+		display: none;
+	}
+
+}
+
+
+/*		Tablet*/
+@media(max-width:600px)
+{
+
+	.navbar .navbar-button
+	{
+		position: absolute;
+		right: 20px;
+	}
+		.navbar .hide
+	{
+		display:none;
+	}
+	.navbar .navbar-item ul li
+	{
+		margin-right: 20px;
+		text-decoration: none;
+     }
+     .navbar .navbar-item ul li a
+     {
+     	text-decoration: none;
+     }
+
+}
+
+@media(max-width:768px)
+{
+	.parent
+	{
+		width: 800px;
+	}
+	.parent h1 
+	{
+		font-size: 30px;
+	}
+	/*.one 
+	{
+		flex-direction: column;
+	}*/
+	.bottom 
+	{
+		width: 800px;
+	}
+	.container 
+	{
+		width: 800px;
+	}
+}
+@media(max-width:991px)
+{
+	.parent
+	{
+		width: 800px;
+	}
+	.parent h1 
+	{
+		font-size: 30px;
+	}
+	/*.one 
+	{
+		flex-direction: column;
+	}*/
+	.bottom 
+	{
+		width: 800px;
+	}
+	.container 
+	{
+		width: 800px;
+	}
+}
+
+	</style>
+
+
+</head>
+<body>
+	<div class="navbar">
+		<a href="#" class="navbar-header"><span>Little</span> Fashion</a>
+		<button class="navbar-button"><i class="fa-solid fa-bars"></i></button>
+		<div class="navbar-item hide">
+			<ul>
+				<ul>
+			<!-- <li class="logo"><span>Little</span>Fashion</li> -->
+			<li><a href="">Home</a></li>
+			<li><a href="file:///C:/Users/banup/OneDrive/Desktop/news%20paper/story/index1.html">story</a></li>
+			<li><a href="file:///C:/Users/banup/OneDrive/Desktop/news%20paper/lock/story.html">Products</a></li>
+			<li><a href="file:///C:/Users/banup/OneDrive/Desktop/news%20paper/faqs/product.html">FAQs</a></li>
+			<li><a href="file:///C:/Users/banup/OneDrive/Desktop/news%20paper/contact/contact.html">Contact</a></li>
+			<li><a href="file:///C:/Users/banup/OneDrive/Desktop/news%20paper/lock/lock.html"><i class="fa-regular fa-id-card"></a></i></li>
+			<li><a href=""><i class="fa-solid fa-lock"></a></i></li>
+		</ul>
+			</ul>
+		</div>
+	</div>
+	<script>
+		document.querySelector(".navbar-button").onclick=function(){
+		  document.querySelector(".navbar-item").classList.toggle("hide")
+		}
+	</script>
+	<div class="container">
+		<div  class="parent">
+			<h1><span>Choose Your</span><br>Favorite stuffs</h1>
+		</div>
+		<div class="child">
+			<h2>New Arrivals</h2>
+			<div class="one">
+				<div class="box box1">
+					<div class="box1-1">
+						<div class="flex">
+						<h3>NewArrival</h3>
+						<i class="fa-solid fa-heart"></i>
+					</div>
+					<div class="flex1">
+					<h2>TreePot&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>$25<br>Original package design from house</span></h2>
+				</div>
+					</div>
+				</div>
+				<div class="box box2">
+					<div class="box2-2">
+						<div class="box2-flex">
+							<h3>DiscountedPrice</h3>
+							<i class="fa-solid fa-heart"></i>
+						</div>
+						<div class="flex11">
+							<h2>FashionSet&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>$35<br>Costume package</span></h2>
+						</div>
+					</div>
+				</div>
+				<div class="box box3">
+					<i class="fa-solid fa-heart"></i>
+					<h2>Juice Drinks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>$45<br>Nature made another world</span></h2>
+				</div>
+			</div>
+		</div>
+		<div class="popular">
+			<h1>Popular</h1>
+			<div class="three">
+				<div class="box box4">
+					<div class="box4-4">
+						<div class="tr">
+						<h4>Trending</h4></div>
+						<i class="fa-solid fa-heart"></i>
+					</div>
+					<h2>Package &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>$50 Original package design from house</span></h2>
+				</div>
+				<div class="box box5">
+					<i class="fa-solid fa-heart"></i>
+					<h2>Bottle <span>$100 Package design</span></h2>
+
+
+				</div>
+				<div class="box box6">
+					<i class="fa-solid fa-heart"></i>
+					<h2>Medicine <span>$200 Original design from house</span></h2>
+
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="btm">
+			<ul class="ul1">
+				<li class="lf"><span>Little</span>Fashion</li>
+				<li>Copyright © 2045 Little Fashion</li>
+				<li>Designed by Tooplate</li>
+			</ul>
+			<ul class="ul2">
+				<li class="st">Sitemap</li>
+				<li>Story</li>
+				<li>Privacy policy</li>
+				<li>Contact</li>	
+			</ul>
+			<ul class="ul3">
+				<li class="sc">Social</li>
+				<li><i class="fa-brands fa-youtube"></i><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-instagram"></i></li>
+			</ul>
+		</div>
+		</div>
+</body>
+</html>

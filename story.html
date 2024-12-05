@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title></title>
+	<style>
+		*
+		{
+			margin: 0;
+			padding: 0;
+		}
+		.container 
+		{
+			height: 400px;
+			width: 100%;
+		/*	border: 1px solid red;*/
+		}
+		.flex 
+		{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.box1 
+		{
+			height: 400px;
+			width: 50%;
+		/*	border: 1px solid blue;*/
+			background-color: #EFFFFC;
+		}
+		.box1 
+		{
+			font-size: 35px;
+			font-weight: 600;
+		}
+		.box1 h1 
+		{
+			margin-left: 200px;
+			margin-top: 100px;
+		}
+		.box1 h1 span
+		{
+			color: red;
+		}
+		.box2 
+		{
+			height: 400px;
+			width: 50%;
+			background-image: url(story1.jpg);
+			background-size: cover;
+		}
+		.box3 
+		{
+		/*	height: 400px;*/
+			width: 100%;
+		/*	border: 1px solid yellow;*/
+			background-color:#CCCCCC;
+		}
+		.box3 h1 
+		{
+			font-size: 50px;
+			margin-left: 100px;
+			margin-top: 50px;
+			font font-weight: 600;
+		}
+		.box3 h1 span 
+		{
+			color: red;
+		}
+		.one 
+		{
+			display: flex;
+			justify-content: space-evenly;
+			margin-top: 50px;
+			flex-wrap: wrap;
+		}
+		.box4 
+		{
+			height: 150px;
+			width: 350px;
+			background-color: white;
+		}
+		.box4 img 
+		{
+			border-radius: 60%;
+			margin-left: 30px;
+			margin-top: 20px;
+		}
+		.box5 
+		{
+			height: 150px;
+			width: 350px;
+			background-color: white;
+		}
+		.box5 img
+		{
+			border-radius: 60%;
+			margin-left: 30px;
+			margin-top: 20px;
+		}
+		.box6 
+		{
+			height: 150px;
+			width: 350px;
+			background-color: white;
+		}
+		.box6 img 
+		{
+			border-radius: 60%;
+			margin-left: 30px;
+			margin-top: 20px;
+		}
+		.img 
+		{
+			display: flex;
+		}
+		.img h3
+		{
+			margin-top: 30px;
+			font-size: 25px;
+			margin-left: 20px;
+		}
+		.img h3 span 
+		{
+			color: grey;
+			font-size: 19px;
+		}
+		.box7 
+		{
+			height: 40px;
+			width: 40px;
+			border: 1px solid grey;
+			background-color: grey;
+			margin-left: 30px;
+			margin-top: 30px;
+			border-radius: 20%;
+		}
+		.two 
+		{
+			display: flex;
+		}
+		.two h3
+		{
+			margin-top: 30px;
+			font-size: 25px;
+			margin-left: 20px;
+		}
+		.two h3 span 
+		{
+			color: grey;
+			font-size: 19px;
+		}
+		.box8 
+		{
+			height: 40px;
+			width: 40px;
+			border: 1px solid grey;
+			background-color: grey;
+			margin-left: 30px;
+			margin-top: 30px;
+			border-radius: 20%;
+		}
+		.three
+		{
+			display: flex;
+		}
+		.three h3
+		{
+			margin-top: 30px;
+			font-size: 25px;
+			margin-left: 20px;
+		}
+		.three h3 span 
+		{
+			color: grey;
+			font-size: 19px;
+		}
+		.box9 
+		{
+			height: 40px;
+			width: 40px;
+		/*	border: 1px solid grey;*/
+			background-color: grey;
+			margin-left: 30px;
+			margin-top: 30px;
+			border-radius: 20%;
+		}
+		.cust 
+		{
+		/*	height: 500px;*/
+			width: 100%;
+		/*	border: 1px solid  black;*/
+		}
+		.cust h1 
+		{
+			text-align: center;
+			font-size: 50px;
+			font-weight: bold;
+		}
+		.cust h1 span 
+		{
+			color: red;
+		}
+		.four 
+		{
+			display: flex;
+		}
+		.four i 
+		{
+			color: red;
+			font-size: 50px;
+			margin-left: 300px;
+			margin-top: 30px;
+		}
+		.four p 
+		{
+			font-size: 25px;
+			margin-top: 100px;
+			margin-left: 30px;
+			color: grey;
+		}
+		.five 
+		{
+			display: flex;
+		}
+		.five img 
+		{
+			margin-left: 400px;
+			margin-top: 20px;
+			border-radius: 60%;
+		}
+		.five h4 
+		{
+			margin-top: 30px;
+			margin-left: 70px;
+			font-size: 20px;
+		}
+		.five h4 span 
+		{
+			color: grey;
+		}
+		.hr 
+		{
+			height: 2px;
+			width: 40%;
+			border: 1px solid black;
+			margin-left: 500px;
+			margin-top: 20px;
+		}
+		.hr1 
+		{
+			height: 2px;
+			width: 45%;
+			border: 1px solid black;
+			background-color: black;
+		}
+
+		/*.bottom 
+		{
+		/*	height: 400px;*/
+			width: 100%;
+			border: 1px solid black;
+			background-color: black;
+			margin-top: 70px;
+		}
+		.btm 
+		{
+			display: flex;
+			justify-content: space-evenly;
+			margin: 30px;
+		/*	flex-wrap: wrap;
+		}
+
+		*
+		{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.navbar
+		{
+			padding: 20px;
+			background-color: white;
+			position: relative;
+		}
+		.navbar a 
+		{
+			text-decoration: none;
+		}
+		.navbar-header
+		{
+			color: red;
+		}
+		.navbar .navbar-header
+		{
+			font-size: 20px;
+		}
+
+
+		/*		Desktop*/
+		@media(max-width:1300px)
+		{
+			.navbar-item ul li 
+			{
+				display: inline;
+			}
+			.navbar .navbar-item
+			{
+				position: absolute;
+				right: 0px;
+				bottom: 20px;
+			}
+			.navbar .navbar-item ul li 
+			{
+				margin-right: 25px;
+				font-size: 20px;
+			}
+			.navbar .navbar-button
+			{
+				display: none;
+			}
+
+		}
+
+
+		/*		Tablet*/
+		@media(max-width:991px)
+		{
+
+			.navbar .navbar-button
+			{
+				position: absolute;
+				right: 20px;
+			}
+				.navbar .hide
+			{
+				display:none;
+			}
+			.navbar .navbar-item ul li
+			{
+				margin-right: 20px;
+				text-decoration: none;
+		     }
+		     .navbar .navbar-item ul li a
+		     {
+		     	text-decoration: none;
+		     }
+
+		}
+
+		@media(max-width:900px)
+		{
+			.flex
+			{
+				flex-direction: column;
+			}
+			.box1 
+			{
+				width: 100%;
+				flex-direction: column;
+			}
+			.box2 
+			{
+				width: 100%;
+				flex-direction: column;
+			}
+			.box2 img 
+			{
+				flex-direction: column;
+				width: 100%;
+			}
+			.container 
+			{
+				width: 900px;
+			}
+			.one 
+			{
+				margin-top: 20px;
+			}
+			.box4
+			{
+				margin-top: 20px;
+			}
+			.box5 
+			{
+				margin-top: 20px;
+			}
+			.box6
+			{
+				margin-top: 20px;
+			}
+		}
+		@media(max-width:600px)
+		{
+			.flex
+			{
+				flex-direction: column;
+			}
+			.container
+			{
+				flex-direction: column;
+				width: 600px;
+			}
+		}
+		@media(max-width:900px)
+		{
+			.box3
+			{
+				flex-direction: column;
+			}
+			.box3 h1 
+			{
+				font-size: 40px;
+			}
+		}
+		@media(max-width:600px)
+		{
+			.box3
+			{
+				flex-direction: column;
+				width: 100%;
+			}
+		}
+		@media(max-width:991px)
+		{
+			.cust
+			{
+				width: 100%;
+			}
+			.cust h1 
+			{
+				font-size: 40px;
+			}
+			.four i 
+			{
+				font-size: 20px;
+				margin-left: 50px;
+			}
+			.five img 
+			{
+				margin-left: 200px;
+			}
+			.hr 
+			{
+				margin-left: 250px;
+			}
+		}
+
+	</style>
+
+</head>
+<body>
+	<!-- 	 <div class="navbar">
+		<a href="#" class="navbar-header"><span>Little</span> Fashion</a>
+		<button class="navbar-button"><i class="fa-solid fa-bars"></i></button>
+		<div class="navbar-item hide">
+			<ul>
+				<ul>
+			<li class="logo"><span>Little</span>Fashion</li>
+			<li><a href="">Home</a></li>
+			<!-- <li><a href="file:///C:/Users/banup/OneDrive/Desktop/news%20paper/story/index1.html">story</a></li> -->
+			<!-- <li><a href="file:///C:/Users/banup/OneDrive/Desktop/news%20paper/product/index.html">Products</a></li>
+			<li><a href="file:///C:/Users/banup/OneDrive/Desktop/news%20paper/faqs/index.html">FAQs</a></li>
+			<li><a href="file:///C:/Users/banup/OneDrive/Desktop/news%20paper/contact/index.html">Contact</a></li>
+			<li><a href="file:///C:/Users/banup/OneDrive/Desktop/news%20paper/lock/index.html"><i class="fa-regular fa-id-card"></a></i></li>
+			<li><a href=""><i class="fa-solid fa-lock"></a></i></li>
+		</ul>
+			</ul>
+		</div>
+	</div> -->
+	<script>
+		document.querySelector(".navbar-button").onclick=function(){
+		  document.querySelector(".navbar-item").classList.toggle("hide")
+		}
+	</script>
+	<div class="container">
+		<div class="flex">
+		<div class="box box1">
+			<h1><span>Company</span><br>Fashion</h1>
+		</div>
+		<div class="box box2"></div>
+	</div>
+		<div class="box box3">
+			<h1>Meet our <span>team</span></h1>
+			<div class="one">
+				<div class="box box4">
+					<div class="img">
+					<img src="don.jpg" height="60px" width="60px">
+					<h3>Don<br><span>product,VP</span></h3>
+					<div class="box box7"></div>
+				</div>
+				</div>
+				<div class="box box5">
+					<div class="two">
+					<img src="kelly.jpg" height="60px" width="60px">
+					<h3>Kelly<br><span>Marketing</span></h3>
+					<div class="box box8"></div>
+				</div>
+				</div>
+				<div class="box box6">
+					<div class="three">
+					<img src="marie.jpg" height="60px" width="60px">
+					<h3>Marie<br><span>Founder</span></h3>
+					<div class="box box9"></div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="cust">
+			<h1>Customer love,<br><span>Little</span> Fashion</h1>
+			<div class="four">
+				<i class="fa-solid fa-quote-left"></i>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br>
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo<br>
+				</p><br>
+			</div>
+			<div class="five">
+			<img src="sti.jpg" height="60px" width="60px">
+			<h4>George,<span>Digital Art Fashion</span></h4>
+		</div>
+		<div class="hr">
+			<div class="hr1"></div>
+		</div>
+		</div>
+		<!-- <div class="bottom">
+			<div class="btm">
+			<ul class="ul1">
+				<li class="lf"><span>Little</span>Fashion</li>
+				<li>Copyright © 2045 Little Fashion</li>
+				<li>Designed by Tooplate</li>
+			</ul>
+			<ul class="ul2">
+				<li class="st">Sitemap</li>
+				<li>Story</li>
+				<li>Privacy policy</li>
+				<li>Contact</li>	
+			</ul>
+			<ul class="ul3">
+				<li class="sc">Social</li>
+				<li><i class="fa-brands fa-youtube"></i><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-instagram"></i></li>
+			</ul>
+		</div>
+		</div> -->
+</body>
+</html>
